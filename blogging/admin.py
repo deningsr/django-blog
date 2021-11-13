@@ -9,7 +9,6 @@ class CategoryInline(admin.TabularInline):
 
 
 class PostAdmin(admin.ModelAdmin):
-    pass
     inlines = [
         CategoryInline,
     ]
