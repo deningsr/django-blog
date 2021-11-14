@@ -1,11 +1,9 @@
 from django.contrib import admin
 from blogging.models import Post, Category
 
-# Register your models here.
-
 
 class CategoryInline(admin.TabularInline):
-    model = Category
+    model = Category.posts.through
 
 
 class PostAdmin(admin.ModelAdmin):
